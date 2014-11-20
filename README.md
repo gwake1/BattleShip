@@ -35,7 +35,7 @@ The game reads outloud
 If you get bored:
 
 Integrate in-game chat.
-Other Requirements:
+Other Requirements :
 
 Must be tested using Mocha
 Must use sass. The amount of sass is left up to the individual, except:
