@@ -1,0 +1,23 @@
+{
+  "name": "BattleShip",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gwake1/BattleShip",
+  "authors": [
+    "David",
+    "Jackie"
+  ],
+  "description": "battleship game",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "chai": "~1.10.0",
+    "mocha": "~2.0.1",
+    "jquery": "~2.1.1"
+  }
+}
