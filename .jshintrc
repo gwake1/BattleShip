@@ -1,0 +1,18 @@
+{
+  "camelcase": true,    // Require variable names to be camelCased
+  "curly": true,        // Require {} following if, for, while and do statements
+  "eqeqeq": true,       // Require `===` and `!==`
+  "forin": true,        // Require all `for in` statements to filter `hasOwnProperty`
+  "immed": true,        // Require IIFEs to be wrapped in parens e.g. `(function () { } ());`
+  "indent": 2,          // Require indentation of 2 spaces
+  "newcap": true,       // Require capitalization of constructor functions e.g. `new F()`
+  "noarg": true,        // Prohibit use of deprecated `arguments.caller` and `arguments.callee`
+  "nonbsp": true,       // Prohibit UTF-8 breaking nbsp characters
+  "nonew": true,        // Prohibit use of constructor functions for side-effects
+  "quotmark": "single", // Require single quotes for consistency
+  "undef": true,        // Require all variables be declared
+  "unused": true,       // Require all variables to be used
+  "strict": true,       // Require ES5 Strict mode
+  "maxlen": 120,        // Require all lines to be less than 120 characters long
+  "node": true          // Defines node specific global variables
+}

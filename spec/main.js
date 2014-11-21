@@ -1,3 +1,5 @@
+/* jshint jquery: true, browser: true */
+
 var player = {
   player1: {
     name: "David",
@@ -15,6 +17,7 @@ var game = {
 function playerName(){
   if(game.turn === true){
     return player.player1.name;
+
   } else {
     return player.player2.name;
   }

@@ -1,0 +1,61 @@
+<h1 id="prepare-yourself-for-battle">Prepare yourself for Battle!</h1>
+
+<h2 id="battleship">Battleship</h2>
+
+<h3 id="basic-gameplay">Basic Gameplay</h3>
+
+<ol>
+  <li>Two players begin the game</li>
+  <li>Prepare for Battle
+    <ul>
+      <li>Theres a 10 x 10 ocean grid for each players ships</li>
+      <li>Each player secretly places their ships on their grid</li>
+      <li>The ships are: 1 5sq aircraft carrier, 1 4sq battleship, 1 3sq submarine, 1 3sq destroyer and 1 2sq patrol boat</li>
+      <li>The ships cant overlap</li>
+      <li>The ships cant be diagonal</li>
+      <li>This should be drag and drop!</li>
+    </ul>
+  </li>
+  <li>Animated coin toss to see who goes first *</li>
+  <li>On Each Players Turn:
+    <ul>
+      <li>The active player:</li>
+      <li>Pick a target square on the grid that represents the other player, to aim</li>
+      <li>Click “Fire” button, to fire</li>
+      <li>Or press Enter, to fire *</li>
+      <li>The current players board that represents the enemy also animates to show the hit or miss</li>
+      <li>If a ship is sunk, the game reads outloud “You sunk my !”</li>
+      <li>If a ship is sunk, the board now shows which ship was sunk</li>
+      <li>If a ship is sunk, the board pops up an excerpt of the wikipedia article on that ship, using the Wikipedia API.</li>
+      <li>The inactive player:</li>
+      <li>Their board configuration will rotate to show their own board</li>
+      <li>Once the active player has played, the inactive players board animates to show the hit or miss</li>
+      <li>If a ship is sunk, the game reads outloud “The enemy sunk your !”</li>
+      <li>Then, both players boards rotate to switch which player is active</li>
+    </ul>
+  </li>
+  <li>End of Gameplay
+    <ul>
+      <li>Once the 5th ship of a given player is sunk, the other player is declared the winner</li>
+      <li>The game reads outloud</li>
+    </ul>
+  </li>
+</ol>
+
+<p>If you get bored:</p>
+
+<ul>
+  <li>Integrate in-game chat.</li>
+</ul>
+
+<h2 id="other-requirements">Other Requirements:</h2>
+
+<ul>
+  <li>Must be tested using Mocha</li>
+  <li>Must use sass. The amount of sass is left up to the individual, except:
+    <ul>
+      <li>Must take advantage of at least one mixin</li>
+    </ul>
+  </li>
+  <li>Must use sockets for the two-player gameplay</li>
+</ul>
