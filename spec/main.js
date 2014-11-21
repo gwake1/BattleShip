@@ -2,12 +2,14 @@
 
 var player = {
   player1: {
-    name: "David",
+    name: "Jessica",
     turn: true,
+    show: true,
   },
   player2: {
     name: "Jackie",
     turn: false,
+    show: false,
   }
 };
 var game = {
@@ -26,10 +28,14 @@ function playerName(){
 function gameIndicator(){
   if(game.turn === true){
     game.turn = false;
-    return game.turn
+    player.player1.show = false;
+    return game.turn;
+    return player.player1.show;
   } else {
     game.turn = true;
-    return game.turn
+    player.player2.show = true;
+    return game.turn;
+    return player.player2.show;
   }
 }
 
@@ -42,5 +48,23 @@ function playerTurn(){
   } else {
     return player2;
     game.turn = true;
+  }
+}
+
+function hide(element){
+  if (element.classList){
+    element.classList.add("hidden");
+  } else {
+    element.className += " " + "hidden";
+  }
+}
+
+function show(element){
+  if(element.classList){
+    element.classList.remove("hidden");
+  } else {
+    element.className = element.className
+    .replace(new RegExp('(^|\\b)'+ 'hidden'.split(' ')
+    .join('|') + '(\\b|$)', 'gi'), ' ');
   }
 }
