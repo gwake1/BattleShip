@@ -48,7 +48,9 @@ If you get bored:
   + Must use sockets for the two-player gameplay
 
 ## Eliza's Breakdown
+
 ### Set up Player's Grid
+
 1.  2 players: Bob & Sue
   + First player Shows Up (Sue)
   + Second Player Shows Up (Bob)
@@ -64,7 +66,9 @@ If you get bored:
     + drag across cells using (Snap-to-Grid: grid = size of cells)
     + click on icon to rotate ship
   + After both players have set up their grid click done
+
 ### How objects communicate with each other (UML)
+
 1.  UML Class Diagram
 2.  Grid:
 3.  Player Grid: ship_locations

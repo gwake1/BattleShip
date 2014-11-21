@@ -19,4 +19,9 @@ describe("set Player turn", function (){
       assert.equal(player.player2.turn, false)
     })
   });
+  describe("Call game indicator", function(){
+    it("game indicator should return false", function (){
+      assert.equal(gameIndicator(), false)
+    });
+  });
 });

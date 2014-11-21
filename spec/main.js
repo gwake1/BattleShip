@@ -17,9 +17,19 @@ var game = {
 function playerName(){
   if(game.turn === true){
     return player.player1.name;
-
+    gameIndicator();
   } else {
     return player.player2.name;
+  }
+}
+
+function gameIndicator(){
+  if(game.turn === true){
+    game.turn = false;
+    return game.turn
+  } else {
+    game.turn = true;
+    return game.turn
   }
 }
 
