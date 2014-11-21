@@ -46,3 +46,27 @@ If you get bored:
   + Must use sass. The amount of sass is left up to the individual, except:
     + Must take advantage of at least one mixin
   + Must use sockets for the two-player gameplay
+
+## Eliza's Breakdown
+### Set up Player's Grid
+1.  2 players: Bob & Sue
+  + First player Shows Up (Sue)
+  + Second Player Shows Up (Bob)
+  + Cointoss => First Player Starts (Sue)
+    + Deluxe: Animated Coin toss
+2.  Place Ships
+  + 10 x 10 grid
+    + Does not have to be a grid
+    + can be a box (Xpx x Xpx) with background of a grid
+    + http://jqueryui.com/draggable/#snap-to
+  + 5 ships
+  + Drag from ship box onto the player's grid
+    + drag across cells using (Snap-to-Grid: grid = size of cells)
+    + click on icon to rotate ship
+  + After both players have set up their grid click done
+### How objects communicate with each other (UML)
+1.  UML Class Diagram
+2.  Grid:
+3.  Player Grid: ship_locations
+4.  Ship: orientation: size: name
+5.  Enemy Grid: fire on (x,y) => boolean
