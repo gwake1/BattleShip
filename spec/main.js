@@ -41,7 +41,7 @@ function gameIndicator(){
 
 function playerTurn(){
   if(game.turn === true){
-    return player.player1.name;
+    playerName();
     game.turn = false;
     player.player1.turn = false;
     player.player2.turn = true;
@@ -51,20 +51,29 @@ function playerTurn(){
   }
 }
 
-function hide(element){
-  if (element.classList){
-    element.classList.add("hidden");
-  } else {
-    element.className += " " + "hidden";
+function hidePlayer1 (){
+  var player1 = document.getElementsByClassName("player1");
+  var player2 = document.getElementsByClassName("player2");
+  for (var i=0;i<player1.length;i+=1){
+    player1[i].style.display = 'none'
   }
+  console.log("player1 hidden");
+  for (var i=0;i<player1.length;i+=1){
+    player2[i].style.display = 'inline-block'
+  }
+  console.log("player2 shown")
+  return "display none"
 }
 
-function show(element){
-  if(element.classList){
-    element.classList.remove("hidden");
-  } else {
-    element.className = element.className
-    .replace(new RegExp('(^|\\b)'+ 'hidden'.split(' ')
-    .join('|') + '(\\b|$)', 'gi'), ' ');
+function hidePlayer2 (){
+  var player1 = document.getElementsByClassName("player1");
+  var player2 = document.getElementsByClassName("player2");
+  for (var i=0;i<player1.length;i+=1){
+    player2[i].style.display = 'none'
   }
+  console.log("player1 hidden");
+  for (var i=0;i<player1.length;i+=1){
+    player1[i].style.display = 'inline-block'
+  }
+  console.log("player2 shown")
 }
