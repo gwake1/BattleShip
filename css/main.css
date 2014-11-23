@@ -29,4 +29,7 @@ body {
   background-image: url("../assets/grid.png");
   margin-bottom: 50px;
 }
-
+.battleship {
+  width: 200px;
+  
+}

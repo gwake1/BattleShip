@@ -62,7 +62,7 @@ function hidePlayer1 (){
     player2[i].style.display = 'inline-block'
   }
   console.log("player2 shown")
-  return "display 1 none"
+  return "display none"
 }
 
 function hidePlayer2 (){
@@ -76,5 +76,6 @@ function hidePlayer2 (){
     player1[i].style.display = 'inline-block'
   }
   console.log("player2 shown")
-  return "display 2 none"
 }
+
+  $("#draggable").draggable({grid:[50,50]});
