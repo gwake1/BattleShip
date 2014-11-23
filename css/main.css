@@ -14,3 +14,19 @@ body {
 .hidden{
   display: none;
 }
+.piecesGrid {
+  width: 500px;
+  height: 500px;
+  background-repeat: repeat;
+  background-image: url("../assets/grid.png");
+  margin-bottom: 50px;
+}
+
+.targetGrid {
+  width: 500px;
+  height: 500px;
+  background-repeat: repeat;
+  background-image: url("../assets/grid.png");
+  margin-bottom: 50px;
+}
+
