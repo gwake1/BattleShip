@@ -62,7 +62,7 @@ function hidePlayer1 (){
     player2[i].style.display = 'inline-block'
   }
   console.log("player2 shown")
-  return "display none"
+  return "display 1 none"
 }
 
 function hidePlayer2 (){
@@ -76,4 +76,5 @@ function hidePlayer2 (){
     player1[i].style.display = 'inline-block'
   }
   console.log("player2 shown")
+  return "display 2 none"
 }
