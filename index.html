@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <title>Battle Ship</title>
   <link rel="stylesheet" href="css/main.css">
+  <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
 </head>
 <body>
-  <img class="battleship ui-widget-content" src="assets/icon_44759.png" id="draggable" >
+  <input id="button" type="button" value="Rotate">
+  <div id="wrapper">
+    <img class="battleship ui-widget-content" src="assets/icon_44759.png" id="draggable" >
+  </div>
   <img class="radar" src="assets/radar.gif">
   <div class="player1">
     <section class="player1board" >
@@ -28,8 +32,9 @@
     <div class="targetGrid">
     </div>
   </div>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
   <script src="spec/main.js"></script>
 </body>
 </html>
