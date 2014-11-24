@@ -5,16 +5,27 @@
   <title>BATTLESHIP</title>
   <link rel="stylesheet" href="css/main.css">
   <link href='http://fonts.googleapis.com/css?family=Russo+One|Exo|Play' rel='stylesheet' type='text/css'>
+  <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
 </head>
+
 <body>
   <h1>BATTLESHIP <!--<img class="battleshipTitleIcon" src="assets/icon_44759.png" >--></h1>
 
   <img class="radar" src="assets/radar.gif">
+  <div class="shipYard">
+    <input id="button" type="button" value="Rotate">
+    <div id="wrapper">
+      <img class="battleship ui-widget-content" src="assets/icon_44759.png" id="draggable" >
+    </div>
+
+  </div>
+
   <div class="player1">
     <section class="player1board" >
       <div class="piecesGrid">
       </div>
     </section>
+
     <section class="player1targets">
       <div class="targetGrid">
       </div>
@@ -32,18 +43,11 @@
       <div class="targetGrid">
     </div>
     </section>
+  </div>
 
-  </div>
-  <div class="shipYard">
-    <img class="battleship ui-widget-content" src="assets/icon_44759.png" id="draggable" >
-    <img class="battleship ui-widget-content" src="assets/icon_44759.png" id="draggable" >
-    <img class="battleship ui-widget-content" src="assets/icon_44759.png" id="draggable" >
-    <img class="battleship ui-widget-content" src="assets/icon_44759.png" id="draggable" >
-    <img class="battleship ui-widget-content" src="assets/icon_44759.png" id="draggable" >
-    <img class="battleship ui-widget-content" src="assets/icon_44759.png" id="draggable" >
-  </div>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
   <script src="spec/main.js"></script>
 </body>
 </html>
