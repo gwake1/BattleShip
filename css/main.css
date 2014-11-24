@@ -1,9 +1,11 @@
 body {
-  background: -webkit-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* W3C */
+  background-image:url("../assets/webtreats_metal_8-512px.jpg");
+  background-repeat: background-repeat;
+  /*background: -webkit-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* Chrome 10+, Saf5.1+ */
+  /*background:    -moz-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* FF3.6+ */
+  /*background:     -ms-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* IE10 */
+  /*background:      -o-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* Opera 11.10+ */
+  /*background:         linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* W3C */
 }
 .radar {
   max-width: 15%;
@@ -20,6 +22,7 @@ body {
   background-repeat: repeat;
   background-image: url("../assets/grid.png");
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .targetGrid {
@@ -27,9 +30,36 @@ body {
   height: 500px;
   background-repeat: repeat;
   background-image: url("../assets/grid.png");
-  margin-bottom: 50px;
+  margin: 50px;
 }
+.battleshipTitleIcon {
+  width: 200px;
+  display: inline-block;
+}
+
 .battleship {
   width: 200px;
-  
+  display: inline-block;
+
+}
+
+.radar {
+  margin: 0 50px 0 50px;
+  float: right;
+
+}
+
+.player1board, .player1targets, .player2board, .player2targets {
+  display: inline-block;
+  width: 40%;
+}
+h1 {
+  font-family: 'Russo One', sans-serif;
+  color: #000;
+  font-size: 5em;
+  display: inline-block;
+  margin-left: 50px;
+}
+.player1, .player2 {
+  margin: 0 auto;
 }
