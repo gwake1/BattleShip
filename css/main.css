@@ -30,7 +30,7 @@ body {
 .ship {
   position: static;
   z-index: 100;
-  float: left;
+  /*float: left;*/
 }
 
 .targetGrid {
