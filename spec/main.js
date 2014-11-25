@@ -9,7 +9,7 @@
         }
       });*/
 var player = {
-player1: {
+  player1: {
     name: "Jessica",
     turn: true,
     show: true,
@@ -24,8 +24,8 @@ var game = {
   turn: true,
 }
 
-function playerName(){
-  if(game.turn === true){
+function playerName() {
+  if (game.turn === true) {
     return player.player1.name;
     gameIndicator();
   } else {
@@ -33,8 +33,8 @@ function playerName(){
   }
 }
 
-function gameIndicator(){
-  if(game.turn === true){
+function gameIndicator() {
+  if (game.turn === true) {
     game.turn = false;
     player.player1.show = false;
     return game.turn;
@@ -47,8 +47,8 @@ function gameIndicator(){
   }
 }
 
-function playerTurn(){
-  if(game.turn === true){
+function playerTurn() {
+  if (game.turn === true) {
     playerName();
     game.turn = false;
     player.player1.turn = false;
@@ -59,34 +59,37 @@ function playerTurn(){
   }
 }
 
-function hidePlayer1 (){
+function hidePlayer1() {
   var player1 = document.getElementsByClassName("player1");
   var player2 = document.getElementsByClassName("player2");
-  for (var i=0;i<player1.length;i+=1){
+  for (var i = 0; i < player1.length; i += 1) {
     player1[i].style.display = 'none'
   }
   console.log("player1 hidden");
-  for (var i=0;i<player1.length;i+=1){
+  for (var i = 0; i < player1.length; i += 1) {
     player2[i].style.display = 'inline-block'
   }
   console.log("player2 shown")
   return "display none"
 }
 
-function hidePlayer2 (){
+function hidePlayer2() {
   var player1 = document.getElementsByClassName("player1");
   var player2 = document.getElementsByClassName("player2");
-  for (var i=0;i<player1.length;i+=1){
+  for (var i = 0; i < player1.length; i += 1) {
     player2[i].style.display = 'none'
   }
   console.log("player1 hidden");
-  for (var i=0;i<player1.length;i+=1){
+  for (var i = 0; i < player1.length; i += 1) {
     player1[i].style.display = 'inline-block'
   }
   console.log("player2 shown")
 }
 
-$("#draggable").draggable({grid:[50,50], revert: "invalid"});
+$(".draggable").draggable({
+  grid: [50, 50],
+  revert: "invalid"
+});
 $(".piecesGrid").droppable();
 
 var angle = 0;
