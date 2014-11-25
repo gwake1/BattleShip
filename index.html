@@ -2,36 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Battle Ship</title>
+  <title>BATTLESHIP</title>
   <link rel="stylesheet" href="css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Russo+One|Exo|Play' rel='stylesheet' type='text/css'>
   <script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
 </head>
+
 <body>
+  <h1><a href="">BATTLESHIP</a></h1>
   <input id="button" type="button">
-  <div id="wrapper">
-    <img class="battleship rotate1 ui-widget-content" src="assets/icon_44759.png" id="draggable" >
-  </div>
   <img class="radar" src="assets/radar.gif">
+  <div class="shipYard">
+    <img class="ship aircraftcarrier ui-widget-content draggable" src="assets/aircraftcarrier.svg">
+    <img class="ship battleship ui-widget-content draggable" src="assets/battleship.svg">
+    <img class="ship submarine ui-widget-content draggable" src="assets/submarine.svg" >
+    <img class="ship destroyer ui-widget-content draggable" src="assets/destroyer.svg">
+    <img class="ship patrolboat ui-widget-content draggable" src="assets/patrolboat.svg">
+  </div>
   <div class="player1">
     <section class="player1board" >
-    <div class="piecesGrid">
-    </div>
+      <div class="piecesGrid">
+      </div>
     </section>
+
     <section class="player1targets">
-    <div class="targetGrid">
-    </div>
+      <div class="targetGrid">
+      </div>
     </section>
-    
   </div>
+
   <div class = "player2">
-    <section class="player2board"></section>
-    <div class="piecesGrid" >
-    </div>
-    
-    <section class="player2targets"></section>
-    <div class="targetGrid">
-    </div>
+    <section class="player2board">
+      <div class="piecesGrid" >
+      </div>
+    </section>
+
+
+    <section class="player2targets">
+      <div class="targetGrid">
+      </div>
+    </section>
   </div>
+
   <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
   <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
