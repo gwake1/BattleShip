@@ -43,7 +43,7 @@ var patrolBoat = {
   name: "patrolBoat",
   rotate: false,
 };
-
+var piecesLocation = [];
 
 function playerName() {
   if (game.turn === true) {
@@ -115,6 +115,12 @@ $(".draggable").draggable({
   containment: "document"
 });
 $(".piecesGrid").droppable();
+
+$(".ship").mouseup(function(){
+console.log("mouse up");
+console.log($(this).position().left);
+console.log($(this).position().top);
+});
 
 $(".ship").click(function(){
   $(".ship").removeClass("selected");

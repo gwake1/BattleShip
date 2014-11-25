@@ -1,6 +1,7 @@
 body {
   background-image:url("../assets/webtreats_metal_1-512px.jpg");
   background-repeat: background-repeat;
+  margin: 0;
   /*background: -webkit-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* Chrome 10+, Saf5.1+ */
   /*background:    -moz-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* FF3.6+ */
   /*background:     -ms-linear-gradient(90deg, #1A2980 10%, #26D0CE 90%); /* IE10 */
@@ -61,9 +62,9 @@ body {
  */
 }
 
-.piecesGrid, .targetGrid{
+/* .piecesGrid, .targetGrid{
   border: 2px solid #636363;
-}
+} */
 /*h1 {
   position: relative;
   font-size: 70px;
