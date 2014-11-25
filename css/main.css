@@ -28,8 +28,9 @@ body {
 }
 
 .ship {
-  position: absolute;
+  position: static;
   z-index: 100;
+  float: left;
 }
 
 .targetGrid {
