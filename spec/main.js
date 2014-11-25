@@ -91,6 +91,8 @@ $(".piecesGrid").droppable();
 
 var angle = 0;
 $('#button').on('click', function() {
-  angle += 90;
-  $(".battleship").rotate(angle);
+  $(".battleship").toggleClass("rotate2");
+  //angle += 90;
+  //$(".battleship").rotate(angle);
 });
+
