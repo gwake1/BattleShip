@@ -1,13 +1,13 @@
 /* jshint jquery: true, browser: true */
 /*var myDataRef = new Firebase('https://battleshipnss.firebaseio.com/');
-      $('#messageInput').keypress(function (e) {
-        if (e.keyCode == 13) {
-          var name = $('#nameInput').val();
-          var text = $('#messageInput').val();
-          myDataRef.set('User ' + name + ' says ' + text);
-          $('#messageInput').val('');
-        }
-      });*/
+$('#messageInput').keypress(function (e) {
+if (e.keyCode == 13) {
+var name = $('#nameInput').val();
+var text = $('#messageInput').val();
+myDataRef.set('User ' + name + ' says ' + text);
+$('#messageInput').val('');
+}
+});*/
 var player = {
   player1: {
     name: "Jessica",
@@ -23,6 +23,27 @@ var player = {
 var game = {
   turn: true,
 }
+var aircraftCarrier = {
+  name: "aircraftcarrier",
+  rotate: false,
+};
+var battleship = {
+  name: "battleship",
+  rotate: false,
+};
+var submarine = {
+  name: "submarine",
+  rotate: false,
+};
+var destroyer = {
+  name: "destroyer",
+  rotate:false,
+};
+var patrolBoat = {
+  name: "patrolBoat",
+  rotate: false,
+};
+
 
 function playerName() {
   if (game.turn === true) {
@@ -87,13 +108,19 @@ function hidePlayer2() {
 }
 
 $(".draggable").draggable({
+  snap: ".piecesGrid",
   grid: [50, 50],
-  revert: "invalid"
+  revert: "invalid",
+  snapMode: "inner",
+  containment: "document"
 });
 $(".piecesGrid").droppable();
 
-var angle = 0;
+$(".ship").click(function(){
+  $(".ship").removeClass("selected");
+  $(this).addClass("selected");
+});
+
 $('#button').on('click', function() {
-  angle += 90;
-  $(".battleship").rotate(angle);
+  $(".selected").toggleClass("rotate2");
 });
